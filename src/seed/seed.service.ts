@@ -3,7 +3,7 @@ import { PokeResponse } from './interfaces/poke-response.interface';
 import { InjectModel } from '@nestjs/mongoose';
 import { Pokemon } from 'src/pokemon/entities/pokemon.entity';
 import { Model } from 'mongoose';
-import { HttpAdapter } from '../../dist/common/interfaces/http-adapter.interface';
+import { HttpAdapter } from 'src/common/interfaces/http-adapter.interface';
 import { AxiosAdapter } from 'src/common/adapters/axios.adapter';
 
 @Injectable()
