@@ -1,14 +1,8 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank">
-    <img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" />
-  </a>
-</p>
+# Pokédex API
 
-<h1 align="center">Pokédex API</h1>
+![Nest Logo](https://nestjs.com/img/logo-small.svg)
 
-<p align="center">
-  Una API REST para gestionar información de Pokémon construida con NestJS y MongoDB
-</p>
+Una API REST para gestionar información de Pokémon construida con NestJS y MongoDB
 
 ## 📋 Descripción
 
@@ -24,35 +18,34 @@ Este proyecto es una Pokédex completa que permite consultar y administrar infor
 
 ### Pasos de Instalación
 
-1. **Clonar el repositorio**
-```bash
-   git clone <url-del-repositorio>
-   cd pokedex
-```
+1. Clonar el repositorio
 
-2. **Instalar dependencias**
-```bash
-   yarn install
-```
+       git clone <url-del-repositorio>
+       cd pokedex
 
-3. **Instalar Nest CLI** (si no lo tienes)
-```bash
-   npm i -g @nestjs/cli
-```
+2. Instalar dependencias
 
-4. **Levantar la base de datos**
-```bash
-   docker-compose up -d
-```
+       yarn install
 
-5. **Ejecutar la aplicación**
-```bash
-   yarn start:dev
-```
+3. Instalar Nest CLI (si no lo tienes)
 
-6. **Acceder a la aplicación**
-   
-   La API estará disponible en: `http://localhost:3000`
+       npm i -g @nestjs/cli
+
+4. Levantar la base de datos
+
+       docker-compose up -d
+
+5. Clonar el archivo .env.template y renombrar dicha copia a .env
+
+6. Llenar las variables de entorno definidas en el .env
+
+7. Ejecutar la aplicacion en dev
+
+       yarn start:dev
+
+8. Reconstruir la base de datos de la semilla
+
+       http://localhost:3000/api/v2/seed
 
 ## 🛠️ Stack Tecnológico
 
@@ -64,31 +57,17 @@ Este proyecto es una Pokédex completa que permite consultar y administrar infor
 ## 📝 Variables de Entorno
 
 Crea un archivo `.env` en la raíz del proyecto con las siguientes variables:
-```env
-MONGODB_URI=mongodb://localhost:27017/pokedex
-PORT=3000
-```
 
-## 🐳 Comandos Docker
-```bash
-# Levantar contenedores
-docker-compose up -d
-
-# Detener contenedores
-docker-compose down
-
-# Ver logs
-docker-compose logs -f
-```
+    MONGODB_URI=mongodb://localhost:27017/pokedex
+    PORT=3000
 
 ## 📚 Endpoints Principales
-```
-GET    /pokemon          - Listar todos los Pokémon
-GET    /pokemon/:id      - Obtener un Pokémon por ID
-POST   /pokemon          - Crear un nuevo Pokémon
-PATCH  /pokemon/:id      - Actualizar un Pokémon
-DELETE /pokemon/:id      - Eliminar un Pokémon
-```
+
+    GET    /pokemon          - Listar todos los Pokémon
+    GET    /pokemon/:id      - Obtener un Pokémon por ID
+    POST   /pokemon          - Crear un nuevo Pokémon
+    PATCH  /pokemon/:id      - Actualizar un Pokémon
+    DELETE /pokemon/:id      - Eliminar un Pokémon
 
 ## 👨‍💻 Autor
 
@@ -96,4 +75,4 @@ Gonzalo Peña
 
 ---
 
-⭐ Si este proyecto te fue útil, considera darle una estrella
+Si este proyecto te fue útil, considera darle una estrella ⭐

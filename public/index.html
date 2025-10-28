@@ -1,13 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-
+      <title>PokéAPI - API REST de Pokémon</title>
       <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-      <h1>Este es mi sitio web</h1>
+      <div class="container">
+            <header class="header">
+                  <img src="./snorlax_pokemon_logo.png" alt="Pokémon API" class="hero-image">
+            </header>
+
+            <main class="main-content">
+                  <h1 class="title">PokéAPI funcionando correctamente</h1>
+                  <p class="description">
+                        API REST construida con NestJS para gestionar información de Pokémon.
+                        Explora, busca y administra tu Pokédex favorita.
+                  </p>
+
+                  <div class="buttons">
+                        <a href="/api/v2/pokemon" class="btn btn-primary">Ver Pokémon</a>
+                        <a href="/api/v2" class="btn btn-secondary">Documentación API</a>
+                  </div>
+
+                  <div class="features">
+                        <div class="feature-card">
+                              <h3>🎯 Endpoints RESTful</h3>
+                              <p>API completa con operaciones CRUD</p>
+                        </div>
+                        <div class="feature-card">
+                              <h3>⚡ NestJS</h3>
+                              <p>Framework robusto y escalable</p>
+                        </div>
+                        <div class="feature-card">
+                              <h3>🗄️ MongoDB</h3>
+                              <p>Base de datos NoSQL optimizada</p>
+                        </div>
+                  </div>
+            </main>
+
+            <footer class="footer">
+                  <p>Desarrollado con ❤️ usando NestJS</p>
+            </footer>
+      </div>
 </body>
 </html>
