@@ -47,6 +47,11 @@ Este proyecto es una Pokédex completa que permite consultar y administrar infor
 
        http://localhost:3000/api/v2/seed
 
+## 🛠️ Crear build de produccion
+
+- **1.** 1. Crear el archivo .env.prod
+- **2.** 2. Crear la nueva imagen: docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build=
+
 ## 🛠️ Stack Tecnológico
 
 - **Backend:** NestJS
